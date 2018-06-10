@@ -31,8 +31,8 @@
 #include "notifier.h"
 
 
-//#define  GPS_DEBUG 1
-#undef  GPS_DEBUG
+#define  GPS_DEBUG 1
+//#undef  GPS_DEBUG
 
 #define  DFR(...)   ALOGD(__VA_ARGS__)
 
