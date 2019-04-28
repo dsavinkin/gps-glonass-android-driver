@@ -31,12 +31,12 @@
 #include "notifier.h"
 
 
-#define  GPS_DEBUG 1
+//#define  GPS_DEBUG 1
 //#undef  GPS_DEBUG
 
 #define  DFR(...)   ALOGD(__VA_ARGS__)
 
-#if GPS_DEBUG
+#ifdef GPS_DEBUG
 #define  D(...)   ALOGD(__VA_ARGS__)
 #else
 #define  D(...)   ((void)0)
@@ -53,3 +53,4 @@
 // Typically between 1-10Hz
 // Higher refresh rate cases higher CPU load
 #define DEFAUTLT_REFRESH_RATE (1)
+
